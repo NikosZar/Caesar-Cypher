@@ -92,9 +92,10 @@ I implemented a naive definition of what a 'short message' is. I say 'naive' bec
 
 ## 🚀 Usage
 
-Usage: =>   ruby caesar_cypher.rb "caesar_cypher_encrypted_text"  
-Example: => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji" 
+**Usage:** =>   ruby caesar_cypher.rb "caesar_cypher_encrypted_text"  
+**Example:** => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji" 
 
 ## 📚 Examples
-Input: => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji veh weetduii ev vyj ev qd eriuhlut tyijhyrkjyed je q jxuehujysqb edu, jxu ydtufudtudsu ev jme shyjuhyq ev sbqiiyvysqjyed ev gkqbyjqjylu tqjq, qdt yd vydtydw jxu sedvytudsu ydjuhlqb veh uijycqjydw jxu fefkbqjyed ijqdtqht tulyqjyed ev q dehcqb tyijhyrkjyed vhec q iqcfbu ijqdtqht tulyqjyed. Cqdo ejxuh ijqjyijysqb juiji qbie kiu jxyi tyijhyrkjyed, iksx qi Vhyutcqd'i qdqboiyi ev lqhyqdsu ro hqdai."  
-Output: => Rfx ymj Ktwhj gj bnym xtz!  
+**Input:** => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji veh weetduii ev vyj ev qd eriuhlut tyijhyrkjyed je q jxuehujysqb edu, jxu ydtufudtudsu ev jme shyjuhyq ev sbqiiyvysqjyed ev gkqbyjqjylu tqjq, qdt yd vydtydw jxu sedvytudsu ydjuhlqb veh uijycqjydw jxu fefkbqjyed ijqdtqht tulyqjyed ev q dehcqb tyijhyrkjyed vhec q iqcfbu ijqdtqht tulyqjyed. Cqdo ejxuh ijqjyijysqb juiji qbie kiu jxyi tyijhyrkjyed, iksx qi Vhyutcqd'i qdqboiyi ev lqhyqdsu ro hqdai."  
+
+**Output:** => Rfx ymj Ktwhj gj bnym xtz!  
