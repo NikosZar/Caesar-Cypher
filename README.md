@@ -45,6 +45,26 @@ A frequency-based decoder makes use of the frequency of letters used in the engl
 - 'T', 'A', 'O', 'I', 'N' are also very common
 - 'Z', 'Q', 'X' are rare
 
+## Frequency Analysis
+
+The Chi-Square test was used to compare the observed letter frequency with the expected english language letter frequency. Chi-Squared was chosen as a first pass at the Caesar Cypher decoder due to the following reasons:
+
+- Simplicity 
+- Well-suited for Caesar Cyphers
+- Computationally Efficient
+
+As I expand my knowledge of cryptography I plan to compare statistical methods to get more accurate results (for example, more accurate results with shorter messages).  
+
+Alternative statistical tests that could be used:
+- Index of Coincidence
+- Bhattacharyya Distance
+- Kullback-Leibler Divergence
+- Cosine Similarity
+
+### Chi-Square Test
+
+$$\chi^2 = \sum \frac {(O - E)^2}{E}$$
+
 ## Advantages  
 The frequency analysis approach is particularly elegant because:
 - It uses mathematical/statistical properties of language
@@ -69,3 +89,12 @@ I implemented a naive definition of what a 'short message' is. I say 'naive' bec
 - Minimum: 100 characters
 - Optimal: 500+ characters
 - Statistical confidence: Increases with √n (where n is text length)
+
+## 🚀 Usage
+
+Usage: =>   ruby caesar_cypher.rb "caesar_cypher_encrypted_text"  
+Example: => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji" 
+
+## 📚 Examples
+Input: => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji veh weetduii ev vyj ev qd eriuhlut tyijhyrkjyed je q jxuehujysqb edu, jxu ydtufudtudsu ev jme shyjuhyq ev sbqiiyvysqjyed ev gkqbyjqjylu tqjq, qdt yd vydtydw jxu sedvytudsu ydjuhlqb veh uijycqjydw jxu fefkbqjyed ijqdtqht tulyqjyed ev q dehcqb tyijhyrkjyed vhec q iqcfbu ijqdtqht tulyqjyed. Cqdo ejxuh ijqjyijysqb juiji qbie kiu jxyi tyijhyrkjyed, iksx qi Vhyutcqd'i qdqboiyi ev lqhyqdsu ro hqdai."  
+Output: => Rfx ymj Ktwhj gj bnym xtz!  
