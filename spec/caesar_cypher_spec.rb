@@ -6,27 +6,27 @@ RSpec.describe 'caesar_cypher' do
     expect(caesar_cypher("", 5)).to eq("")
   end
 
-  it 'shifts letters by one position' do
-    expect(caesar_cypher("abc", 1)).to eq("bcd")
+  it 'shifts letters by one position left' do
+    expect(caesar_cypher("abc", 1)).to eq("zab")
   end
 
-  it 'shifts letters by 5 positions' do
-    expect(caesar_cypher("abc", 5)).to eq("fgh")
+  it 'shifts letters by 5 positions left' do
+    expect(caesar_cypher("abc", 5)).to eq("vwx")
   end
 
-  it 'wraps from z to a' do
-    expect(caesar_cypher("xyz", 3)).to eq("abc")
+  it 'wraps from a to z' do
+    expect(caesar_cypher("abc", 3)).to eq("xyz")
   end
 
   it 'preserves capitalization' do
-    expect(caesar_cypher("Cab", 2)).to eq("Ecd")
+    expect(caesar_cypher("Cab", 2)).to eq("Ayz")
   end
 
   it 'preserves spaces and punctuation' do
-    expect(caesar_cypher("Hello, World!", 1)).to eq("Ifmmp, Xpsme!")
+    expect(caesar_cypher("Hello, World!", 1)).to eq("Gdkkn, Vnqkc!")
   end
 
   it 'does not shift punctuation' do
-    expect(caesar_cypher("a!?", 2)).to eq("c!?")
+    expect(caesar_cypher("a!?", 2)).to eq("y!?")
   end
 end
