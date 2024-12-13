@@ -8,13 +8,16 @@ def caesar_cypher(string, left_shift_value)
   end.join
 end
 
-if ARGV.length != 2
-  puts "Usage: ruby caesar_cypher.rb \"your text\" shift_number"
-  puts "Example: ruby caesar_cypher.rb \"hello world\" 3"
-  exit
+# Only run this if caesar_cypher.rb is the main program
+if __FILE__ == $PROGRAM_NAME
+  if ARGV.length != 2
+    puts "Usage: ruby caesar_cypher.rb \"your text\" shift_number"
+    puts "Example: ruby caesar_cypher.rb \"hello world\" 3"
+    exit
+  end
+
+  text = ARGV[0]
+  shift = ARGV[1].to_i
+
+  puts caesar_cypher(text, shift)
 end
-
-text = ARGV[0]
-shift = ARGV[1].to_i
-
-puts caesar_cypher(text, shift)
