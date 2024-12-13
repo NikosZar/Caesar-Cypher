@@ -80,18 +80,3 @@ decrypted = caesar_cypher(encrypted_text, 26-result[:shift])
 puts "Detected shift: #{result[:shift]}"
 puts "#{result[:confidence]}"
 puts "Decrypted text: #{decrypted}"
-
-#Pseudocode
-# Method that intakes the encrypted message (if message empty, return empty or error)
-# Method analyzes the frequencies distribution of letters in the message
-# Method determines the most likely shift value
-# Method outputs the decrypted message
-# Include appropriate error handling and input validation
-#
-# Hint:
-# What mathematical operations could help measure the distance between two frequency distributions?
-# How will I handle case-sensitivity? Non-alphabetic characters?
-# How will I handle very short messages where frequency analysis might be less reliable
-#
-# Future:
-# Implement multiple statistical methods and compare their effectiveness
