@@ -98,4 +98,7 @@ I implemented a naive definition of what a 'short message' is. I say 'naive' bec
 ## 📚 Examples
 **Input:** => ruby caesar_cypher.rb "ruby caesar_cypher_decoder.rb "Jxu sxy-igkqhut tyijhyrkjyed yi kiut yd jxu secced sxy-igkqhut juiji veh weetduii ev vyj ev qd eriuhlut tyijhyrkjyed je q jxuehujysqb edu, jxu ydtufudtudsu ev jme shyjuhyq ev sbqiiyvysqjyed ev gkqbyjqjylu tqjq, qdt yd vydtydw jxu sedvytudsu ydjuhlqb veh uijycqjydw jxu fefkbqjyed ijqdtqht tulyqjyed ev q dehcqb tyijhyrkjyed vhec q iqcfbu ijqdtqht tulyqjyed. Cqdo ejxuh ijqjyijysqb juiji qbie kiu jxyi tyijhyrkjyed, iksx qi Vhyutcqd'i qdqboiyi ev lqhyqdsu ro hqdai."  
 
-**Output:** => Rfx ymj Ktwhj gj bnym xtz!  
+**Output:** 
+=> Detected shift: 10  
+=> Moderate or longer message. High confidence (464 chars)  
+=> Decrypted text: The chi-squared distribution is used in the common chi-squared tests for goodness of fit of an observed distribution to a theoretical one, the independence of two criteria of classification of qualitative data, and in finding the confidence interval for estimating the population standard deviation of a normal distribution from a sample standard deviation. Many other statistical tests also use this distribution, such as Friedman's analysis of variance by ranks.
