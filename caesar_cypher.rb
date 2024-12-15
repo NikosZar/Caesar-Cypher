@@ -1,8 +1,8 @@
-def caesar_cypher(string, left_shift_value)
+def caesar_cypher(string, shift)
   string.chars.map do |char|
     case char
-    when ('a'..'z') then (((char.ord - 'a'.ord  - left_shift_value.to_i) % 26) + 'a'.ord).chr
-    when ('A'..'Z') then (((char.ord - 'A'.ord  - left_shift_value.to_i) % 26) + 'A'.ord).chr
+    when ('a'..'z') then (((char.ord - 'a'.ord  - shift.to_i) % 26) + 'a'.ord).chr
+    when ('A'..'Z') then (((char.ord - 'A'.ord  - shift.to_i) % 26) + 'A'.ord).chr
     else char
     end
   end.join
