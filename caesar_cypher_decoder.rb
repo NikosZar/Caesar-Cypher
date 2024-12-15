@@ -15,22 +15,20 @@ end
 
 # frequency distribution of encrypted string
 def freq_encrypted_message(encrypted_message)
-  #1. clean the text - keep only the letters for frequency analysis
+  # 1. clean the text - keep only the letters for frequency analysis
   cleaned_message = encrypted_message.downcase.gsub(/[^a-z]/, '')
 
-  #2. frequency of each character in the message
-  message_length = cleaned_message.split("").length
-  message_arr = cleaned_message.split("").to_a
+  # 2. frequency of each character in the message
+  message_length = cleaned_message.split('').length
+  message_arr = cleaned_message.split('').to_a
 
-  #store char counts in hash
-  char_count = message_arr.reduce(Hash.new(0)) do |hash, char|
+  # store char counts in hash
+  char_count = message_arr.each_with_object(Hash.new(0)) do |char, hash|
     hash[char] += 1
-    hash
   end
 
-  #3. Iterate through hash and calculate proportion
-  char_distribution = char_count.transform_values {|value|  value = value/message_length.to_f * 100 }
-  char_distribution
+  # 3. Iterate through hash and calculate proportion
+  char_count.transform_values { |value| value / message_length.to_f * 100 }
 end
 
 # Chi-Squared sum(observred - expected)^2 / expected
@@ -52,7 +50,7 @@ def find_best_shift(encrypted_message)
   lowest_chi_squared = Float::INFINITY
 
   (0..25).each do |shift|
-    decrypted_attempt = caesar_cypher(encrypted_message, 26-shift)
+    decrypted_attempt = caesar_cypher(encrypted_message, 26 - shift)
     frequencies = freq_encrypted_message(decrypted_attempt)
     chi_squared = compare_frequencies(frequencies)
 
@@ -69,13 +67,13 @@ def find_best_shift(encrypted_message)
 end
 
 if ARGV.length != 1
-  puts "Usage: ruby caesar_cypher_decoder.rb \"encrypted text\""
+  puts 'Usage: ruby caesar_cypher_decoder.rb "encrypted text"'
   exit
 end
 
 encrypted_text = ARGV[0]
 result = find_best_shift(encrypted_text)
-decrypted = caesar_cypher(encrypted_text, 26-result[:shift])
+decrypted = caesar_cypher(encrypted_text, 26 - result[:shift])
 
 puts "Detected shift: #{result[:shift]}"
 puts "#{result[:confidence]}"
